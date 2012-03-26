@@ -1,48 +1,48 @@
-<!doctype html>
-<html>
-<head>
-<title>Radial Active Clock for Pachube</title>
-<style type="text/css">
+<!doctype html> 
+<html> 
+<head> 
+<title>Radial Active Clock for Pachube</title> 
+<style type="text/css"> 
 h5, h5 a { font:16pt lucida,sans-serif; color:#777; }
 p, ul { font:9pt lucida,sans-serif; color:#555; width:500px; text-align:left; }
 body { background:#fff; }
 .pachube-radial { display:inline; }
 .pachube-radial canvas { background:#eee; }
-</style>
-<body><center>
-
-<h5><a href="http://ox4hs.utou.ch/pachube-radial">Radial Active Clock</a> for <a href="http://www.pachube.com">Pachube</a></h5>
-
-<div class="pachube-radial" pachube-resource="feeds/3194/datastreams/1" pachube-key="1iObDqRLQTi6Z3L-Gf7rKBJfSfSvrwFsmE83KrpYtCY" pachube-options="timespan:24 hours;showclock:yes;background-color:#fff;line-color:#EE4466;grid-color:#EFEFEF;border-color:#F24679;text-color:#cc0000;" style="width:500px;height:500px;background:#F0F0F0;font:9pt arial">Graph: Feed 3194, Datastream 1</div>
-
-<div class="pachube-radial" pachube-resource="feeds/3194/datastreams/1" pachube-key="1iObDqRLQTi6Z3L-Gf7rKBJfSfSvrwFsmE83KrpYtCY" pachube-options="timespan:4 days;showclock:no;background-color:#333;line-color:#EE4466;grid-color:#333333;border-color:#A24679;text-color:#cc0000;" style="width:500px;height:500px;background:#F0F0F0;font:9pt arial">Graph: Feed 3194, Datastream 1</div>
-
+</style> 
+<body><center> 
+ 
+<h5><a href="http://ox4hs.utou.ch/pachube-radial">Radial Active Clock</a> for <a href="http://www.pachube.com">Pachube</a></h5> 
+ 
+<div class="pachube-radial" pachube-resource="feeds/26148/datastreams/1" pachube-key="0y_38VmtJToIKrHEqW4TkfUmjb43SWNg9Wssbj_MCZs" pachube-options="timespan:24 hours;showclock:yes;background-color:#fff;line-color:#EE4466;grid-color:#EFEFEF;border-color:#F24679;text-color:#cc0000;" style="width:500px;height:500px;background:#F0F0F0;font:9pt arial">Graph: Feed 26148, Datastream 1</div> 
+ 
+<div class="pachube-radial" pachube-resource="feeds/26148/datastreams/1" pachube-key="0y_38VmtJToIKrHEqW4TkfUmjb43SWNg9Wssbj_MCZs" pachube-options="timespan:4 days;showclock:no;background-color:#333;line-color:#EE4466;grid-color:#333333;border-color:#A24679;text-color:#cc0000;" style="width:500px;height:500px;background:#F0F0F0;font:9pt arial">Graph: Feed 26148, Datastream 1</div> 
+ 
 <!-- Optional: jQuery can be auto-loaded from CDN 
 <script language="JavaScript" src="lib/jquery-1.4.2.min.js"></script>
--->
-
-<!-- Radial Active Clock for Pachube -->
-<script language="JavaScript" src="graph-min.js"></script>
-
-<p>This radial graph can be used to visualize a <a href="http://www.pachube.com" target="_blank">Pachube</a> data feed over time. It is ideally suited for time ranges of at least 24 hours: in this case, the timestamps are mapped to their orientation on the clockface. Animated dials showing the hour, minutes and seconds of the current time are superimposed as an option.</p>
-
+--> 
+ 
+<!-- Radial Active Clock for Pachube --> 
+<script language="JavaScript" src="graph.js"></script> 
+ 
+<p>This radial graph can be used to visualize a <a href="http://www.pachube.com" target="_blank">Pachube</a> data feed over time. It is ideally suited for time ranges of at least 24 hours: in this case, the timestamps are mapped to their orientation on the clockface. Animated dials showing the hour, minutes and seconds of the current time are superimposed as an option.</p> 
+ 
 <p><u>Instructions:</u> use the <a href="http://paulbellamy.com/pachube_graph_library/">Pachube Embeddable Graph Generator</a> to create an embed code for your feed. Change the div tag to read <b>class="pachube-radial"</b> and the source of the script to
-<b>src="http://ox4hs.utou.ch/pachube-radial/graph-min.js"</b></p>
-
-<p><u>Tips:</u></p><ul>
-<li>Set the <b>font</b> style to modify or hide (0pt) the title</li>
-<li>Add <b>showclock:no;</b> to <i>pachube-options</i> to just show the radial graph</li>
-<li>All other options control size and colouring of the graph</li>
-<li>Please send <a href="http://twitter.com/loleg">feedback</a> if the graph doesn't work as you'd expect, you are in a non-GMT timezone or getting browser quirks</li>
-<li>Works in: Firefox 3+ and Chrome 9+ (currently needs work/testing in IE, Safari, Opera)</li>
-</ul>
-
-<p><u>Source:</u> clone it <a href="https://bitbucket.org/loleg/ox4hs/overview">from my Bitbucket</a> or grab it <a href="graph.js">here</a>. Leave <a href="http://oleg.utou.ch">me a note</a> if you need help or feedback. If you like it/use it, <a href="http://twitter.com/loleg">send a tweet</a> my way.</p>
-
-<p><u><b>Thank you</b></u> to <a href="http://www.pachube.com">Pachube</a> for an exciting platform and an awesome international hackathon where this was created. Big props to <a href="http://paulbellamy.com/">Paul Bellamy</a> for developing the Graph Generator which this code gleefully apes and, lastly but most of all to <a href="http://marsflyer.tumblr.com">MarsFlyer</a> for inspiration, moral support at 2 AM, feedback and testing :)</p>
-
-<p style="text-align:center">
+<b>src="http://ox4hs.utou.ch/pachube-radial/graph-min.js"</b></p> 
+ 
+<p><u>Tips:</u></p><ul> 
+<li>Set the <b>font</b> style to modify or hide (0pt) the title</li> 
+<li>Add <b>showclock:no;</b> to <i>pachube-options</i> to just show the radial graph</li> 
+<li>All other options control size and colouring of the graph</li> 
+<li>Please send <a href="http://twitter.com/loleg">feedback</a> if the graph doesn't work as you'd expect, you are in a non-GMT timezone or getting browser quirks</li> 
+<li>Works in: Firefox 3+ and Chrome 9+ (currently needs work/testing in IE, Safari, Opera)</li> 
+</ul> 
+ 
+<p><u>Source:</u> <a href="https://github.com/loleg/radialgraph-pachube">fork it on GitHub</a> or grab it <a href="graph.js">here</a>. Leave <a href="http://oleg.utou.ch">me a note</a> or add an issue if you need help or feedback. If you like it/use it, <a href="http://twitter.com/loleg">please send a tweet</a> my way.</p> 
+ 
+<p><u><b>Thank you</b></u> to <a href="http://www.pachube.com">Pachube</a> for an awesome platform and hosting the hackathon where this was initiallz created. Big props to <a href="http://paulbellamy.com/">Paul Bellamy</a> for developing the Graph Generator which this code gleefully apes and, lastly but most of all to <a href="http://marsflyer.tumblr.com">MarsFlyer</a> for inspiration, moral support at 2 AM, feedback and testing :)</p> 
+ 
+<p style="text-align:center"> 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons Licence" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
-</p>
-</body>
+</p> 
+</body> 
 </html>
